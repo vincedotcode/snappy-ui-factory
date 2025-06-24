@@ -1,41 +1,38 @@
 
 .card {
-  border-radius: 0.5rem;
-  border: 1px solid hsl(214.3 31.8% 91.4%);
-  background-color: hsl(0 0% 100%);
-  color: hsl(222.2 84% 4.9%);
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border-radius: var(--ig-border-radius-large);
+  border: var(--ig-border-width) solid var(--ig-border);
+  background-color: var(--ig-background-neutral);
+  color: var(--ig-text-bold);
+  box-shadow: var(--ig-elevation-level-1);
 }
 
 .card-header {
   display: flex;
   flex-direction: column;
-  gap: 0.375rem;
-  padding: 1.5rem;
+  gap: var(--ig-size-100);
+  padding: var(--ig-size-300);
 }
 
 .card-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.025em;
+  font: var(--ig-typography-heading-small-bold);
   margin: 0;
 }
 
 .card-description {
-  font-size: 0.875rem;
-  color: hsl(215.4 16.3% 46.9%);
+  font: var(--ig-typography-body-medium-regular);
+  color: var(--ig-text-subtle);
   margin: 0;
 }
 
 .card-content {
-  padding: 1.5rem;
+  padding: var(--ig-size-300);
   padding-top: 0;
 }
 
 .card-footer {
   display: flex;
   align-items: center;
-  padding: 1.5rem;
+  padding: var(--ig-size-300);
   padding-top: 0;
 }

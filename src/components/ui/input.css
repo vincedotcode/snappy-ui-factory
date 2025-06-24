@@ -1,43 +1,42 @@
 
 .input {
   display: flex;
-  height: 2.5rem;
+  height: var(--ig-component-size-large);
   width: 100%;
-  border-radius: 0.375rem;
-  border: 1px solid hsl(214.3 31.8% 91.4%);
-  background-color: hsl(0 0% 100%);
-  padding: 0.5rem 0.75rem;
-  font-size: 1rem;
-  ring-offset-width: 2px;
-  transition: colors 0.2s;
+  border-radius: var(--ig-border-radius-input);
+  border: var(--ig-border-width-input) solid var(--ig-border);
+  background-color: var(--ig-background-neutral);
+  padding: var(--ig-component-input-medium-vertical-padding) var(--ig-component-input-medium-horizontal-padding);
+  font: var(--ig-typography-body-medium-regular);
+  transition: all 0.2s ease;
   outline: none;
-  color: hsl(222.2 84% 4.9%);
+  color: var(--ig-text-bold);
 }
 
 .input::placeholder {
-  color: hsl(215.4 16.3% 46.9%);
+  color: var(--ig-text-subtler);
 }
 
 .input:focus-visible {
-  outline: 2px solid hsl(222.2 84% 4.9%);
-  outline-offset: 2px;
+  box-shadow: var(--ig-box-shadow-focus);
+  border-color: var(--ig-border-focus);
 }
 
 .input:disabled {
   cursor: not-allowed;
-  opacity: 0.5;
+  opacity: var(--ig-opacity-disabled);
+  background-color: var(--ig-background-neutral-subtler);
 }
 
 .input::file-selector-button {
   border: 0;
   background-color: transparent;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: hsl(222.2 84% 4.9%);
+  font: var(--ig-typography-body-small-medium);
+  color: var(--ig-text-bold);
 }
 
 @media (min-width: 768px) {
   .input {
-    font-size: 0.875rem;
+    font-size: var(--ig-font-size-body-small);
   }
 }

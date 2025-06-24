@@ -3,27 +3,25 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: var(--ig-size-100);
   white-space: nowrap;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  ring-offset-width: 2px;
-  transition: colors 0.2s;
-  border: 1px solid transparent;
+  border-radius: var(--ig-border-radius);
+  font-size: var(--ig-font-size-body);
+  font-weight: var(--ig-font-weight-medium);
+  transition: all 0.2s ease;
+  border: var(--ig-border-width) solid transparent;
   cursor: pointer;
   outline: none;
+  font-family: var(--ig-font-family-body);
 }
 
 .btn:focus-visible {
-  outline: 2px solid;
-  outline-color: hsl(222.2 84% 4.9%);
-  outline-offset: 2px;
+  box-shadow: var(--ig-box-shadow-focus);
 }
 
 .btn:disabled {
   pointer-events: none;
-  opacity: 0.5;
+  opacity: var(--ig-opacity-disabled);
 }
 
 .btn svg {
@@ -35,81 +33,109 @@
 
 /* Variants */
 .btn-default {
-  background-color: hsl(222.2 47.4% 11.2%);
-  color: hsl(210 40% 98%);
+  background-color: var(--ig-background-primary-bold);
+  color: var(--ig-text-on-color);
 }
 
 .btn-default:hover {
-  background-color: hsl(222.2 47.4% 11.2% / 0.9);
+  background-color: var(--ig-background-primary-bold-hover);
+}
+
+.btn-default:active {
+  background-color: var(--ig-background-primary-bold-pressed);
 }
 
 .btn-destructive {
-  background-color: hsl(0 84.2% 60.2%);
-  color: hsl(210 40% 98%);
+  background-color: var(--ig-background-error-bold);
+  color: var(--ig-text-on-color);
 }
 
 .btn-destructive:hover {
-  background-color: hsl(0 84.2% 60.2% / 0.9);
+  background-color: var(--ig-background-error-bold-hover);
+}
+
+.btn-destructive:active {
+  background-color: var(--ig-background-error-bold-pressed);
 }
 
 .btn-outline {
-  border: 1px solid hsl(214.3 31.8% 91.4%);
-  background-color: hsl(0 0% 100%);
-  color: hsl(222.2 84% 4.9%);
+  border: var(--ig-border-width) solid var(--ig-border);
+  background-color: var(--ig-background-neutral);
+  color: var(--ig-text-bold);
 }
 
 .btn-outline:hover {
-  background-color: hsl(210 40% 96.1%);
-  color: hsl(222.2 47.4% 11.2%);
+  background-color: var(--ig-background-neutral-hover);
+  border-color: var(--ig-border-bold);
+}
+
+.btn-outline:active {
+  background-color: var(--ig-background-neutral-pressed);
 }
 
 .btn-secondary {
-  background-color: hsl(210 40% 96.1%);
-  color: hsl(222.2 47.4% 11.2%);
+  background-color: var(--ig-background-secondary-bold);
+  color: var(--ig-text-on-color);
 }
 
 .btn-secondary:hover {
-  background-color: hsl(210 40% 96.1% / 0.8);
+  background-color: var(--ig-background-secondary-bold-hover);
+}
+
+.btn-secondary:active {
+  background-color: var(--ig-background-secondary-bold-pressed);
 }
 
 .btn-ghost {
-  color: hsl(222.2 84% 4.9%);
+  color: var(--ig-text-bold);
+  background-color: transparent;
 }
 
 .btn-ghost:hover {
-  background-color: hsl(210 40% 96.1%);
-  color: hsl(222.2 47.4% 11.2%);
+  background-color: var(--ig-background-neutral-hover);
+}
+
+.btn-ghost:active {
+  background-color: var(--ig-background-neutral-pressed);
 }
 
 .btn-link {
-  color: hsl(222.2 47.4% 11.2%);
-  text-decoration: underline;
+  color: var(--ig-text-primary);
+  text-decoration: var(--ig-text-decoration-link);
   text-underline-offset: 4px;
+  background-color: transparent;
 }
 
 .btn-link:hover {
-  text-decoration: underline;
+  color: var(--ig-text-primary-hover);
+  text-decoration: var(--ig-text-decoration-link);
+}
+
+.btn-link:active {
+  color: var(--ig-text-primary-pressed);
 }
 
 /* Sizes */
 .btn-size-default {
-  height: 2.5rem;
-  padding: 0.5rem 1rem;
+  height: var(--ig-component-size-large);
+  padding: 0 var(--ig-size-200);
 }
 
 .btn-size-sm {
-  height: 2.25rem;
-  border-radius: 0.375rem;
-  padding: 0 0.75rem;
+  height: var(--ig-component-size-medium);
+  border-radius: var(--ig-border-radius);
+  padding: 0 var(--ig-size-150);
+  font-size: var(--ig-font-size-body-small);
 }
 
 .btn-size-lg {
-  height: 2.75rem;
-  border-radius: 0.375rem;
-  padding: 0 2rem;
+  height: var(--ig-component-size-xlarge);
+  border-radius: var(--ig-border-radius);
+  padding: 0 var(--ig-size-400);
+  font-size: var(--ig-font-size-body-large);
 }
 
 .btn-size-icon {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: var(--ig-component-size-large);
+  width: var(--ig-component-size-large);
 }

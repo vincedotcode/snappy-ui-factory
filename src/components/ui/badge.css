@@ -3,51 +3,53 @@
   display: inline-flex;
   align-items: center;
   border-radius: 9999px;
-  border: 1px solid;
-  padding: 0.125rem 0.625rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  transition: colors 0.2s;
+  border: var(--ig-border-width) solid;
+  padding: var(--ig-size-025) var(--ig-size-150);
+  font: var(--ig-typography-caption-medium-bold);
+  transition: all 0.2s ease;
   outline: none;
 }
 
 .badge:focus {
-  outline: 2px solid hsl(222.2 84% 4.9%);
-  outline-offset: 2px;
+  box-shadow: var(--ig-box-shadow-focus);
 }
 
 .badge-default {
   border-color: transparent;
-  background-color: hsl(222.2 47.4% 11.2%);
-  color: hsl(210 40% 98%);
+  background-color: var(--ig-background-primary-bold);
+  color: var(--ig-text-on-color);
 }
 
 .badge-default:hover {
-  background-color: hsl(222.2 47.4% 11.2% / 0.8);
+  background-color: var(--ig-background-primary-bold-hover);
 }
 
 .badge-secondary {
   border-color: transparent;
-  background-color: hsl(210 40% 96.1%);
-  color: hsl(222.2 47.4% 11.2%);
+  background-color: var(--ig-background-secondary-bold);
+  color: var(--ig-text-on-color);
 }
 
 .badge-secondary:hover {
-  background-color: hsl(210 40% 96.1% / 0.8);
+  background-color: var(--ig-background-secondary-bold-hover);
 }
 
 .badge-destructive {
   border-color: transparent;
-  background-color: hsl(0 84.2% 60.2%);
-  color: hsl(210 40% 98%);
+  background-color: var(--ig-background-error-bold);
+  color: var(--ig-text-on-color);
 }
 
 .badge-destructive:hover {
-  background-color: hsl(0 84.2% 60.2% / 0.8);
+  background-color: var(--ig-background-error-bold-hover);
 }
 
 .badge-outline {
-  color: hsl(222.2 84% 4.9%);
-  border-color: hsl(214.3 31.8% 91.4%);
+  color: var(--ig-text-bold);
+  border-color: var(--ig-border);
   background-color: transparent;
+}
+
+.badge-outline:hover {
+  background-color: var(--ig-background-neutral-hover);
 }
