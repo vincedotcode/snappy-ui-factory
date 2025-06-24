@@ -1,8 +1,4 @@
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Your custom theme variables */
 :root, [data-theme="light"] {
   --ig-black: #000;
@@ -674,14 +670,12 @@
   --ig-box-shadow-focus: 0px 0px 0px 2px #e84c1d;
 }
 
-@layer base {
-  * {
-    border-color: var(--ig-border);
-  }
+* {
+  border-color: var(--ig-border);
+}
 
-  body {
-    background-color: var(--ig-background-neutral);
-    color: var(--ig-text-bold);
-    font-family: var(--ig-font-family-body);
-  }
+body {
+  background-color: var(--ig-background-neutral);
+  color: var(--ig-text-bold);
+  font-family: var(--ig-font-family-body);
 }
