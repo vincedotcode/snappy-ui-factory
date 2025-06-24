@@ -1,0 +1,22 @@
+
+{
+  "name": "ig-components-cli",
+  "version": "1.0.0",
+  "description": "CLI for IG Component Library",
+  "main": "index.js",
+  "bin": {
+    "ig-components": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["components", "ui", "react", "ig"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "files": [
+    "index.js"
+  ]
+}
