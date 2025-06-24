@@ -1,0 +1,53 @@
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: colors 0.2s;
+  outline: none;
+}
+
+.badge:focus {
+  outline: 2px solid hsl(222.2 84% 4.9%);
+  outline-offset: 2px;
+}
+
+.badge-default {
+  border-color: transparent;
+  background-color: hsl(222.2 47.4% 11.2%);
+  color: hsl(210 40% 98%);
+}
+
+.badge-default:hover {
+  background-color: hsl(222.2 47.4% 11.2% / 0.8);
+}
+
+.badge-secondary {
+  border-color: transparent;
+  background-color: hsl(210 40% 96.1%);
+  color: hsl(222.2 47.4% 11.2%);
+}
+
+.badge-secondary:hover {
+  background-color: hsl(210 40% 96.1% / 0.8);
+}
+
+.badge-destructive {
+  border-color: transparent;
+  background-color: hsl(0 84.2% 60.2%);
+  color: hsl(210 40% 98%);
+}
+
+.badge-destructive:hover {
+  background-color: hsl(0 84.2% 60.2% / 0.8);
+}
+
+.badge-outline {
+  color: hsl(222.2 84% 4.9%);
+  border-color: hsl(214.3 31.8% 91.4%);
+  background-color: transparent;
+}

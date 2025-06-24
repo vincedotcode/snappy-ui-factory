@@ -1,0 +1,26 @@
+
+.badge-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.usage-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.example-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: hsl(215.4 16.3% 46.9%);
+}
