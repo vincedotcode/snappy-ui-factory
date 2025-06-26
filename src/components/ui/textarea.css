@@ -1,0 +1,30 @@
+
+.textarea {
+  display: flex;
+  min-height: 80px;
+  width: 100%;
+  border-radius: var(--ig-border-radius-input);
+  border: var(--ig-border-width-input) solid var(--ig-border);
+  background-color: var(--ig-background-neutral);
+  padding: var(--ig-component-input-medium-vertical-padding) var(--ig-component-input-medium-horizontal-padding);
+  font-size: var(--ig-font-size-body);
+  font-family: var(--ig-font-family-body);
+  color: var(--ig-text-bold);
+  outline: none;
+  transition: all 0.2s ease;
+  resize: vertical;
+}
+
+.textarea:focus {
+  border-color: var(--ig-border-focus);
+  box-shadow: var(--ig-box-shadow-focus);
+}
+
+.textarea:disabled {
+  cursor: not-allowed;
+  opacity: var(--ig-opacity-disabled);
+}
+
+.textarea::placeholder {
+  color: var(--ig-text-subtler);
+}

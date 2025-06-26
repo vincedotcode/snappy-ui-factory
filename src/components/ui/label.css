@@ -1,0 +1,16 @@
+
+.label {
+  font-size: var(--ig-font-size-body-small);
+  font-weight: var(--ig-font-weight-medium);
+  font-family: var(--ig-font-family-body);
+  color: var(--ig-text-bold);
+  line-height: 1;
+  cursor: pointer;
+}
+
+.label:has(+ input:disabled),
+.label:has(+ textarea:disabled),
+.label:has(+ select:disabled) {
+  cursor: not-allowed;
+  opacity: var(--ig-opacity-disabled);
+}

@@ -1,0 +1,36 @@
+
+.textarea-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.textarea-group,
+.textarea-variants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.textarea-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-example {
+  max-width: 400px;
+}
+
+.help-text {
+  font-size: 0.875rem;
+  color: hsl(215.4 16.3% 46.9%);
+  margin: 0;
+}
+
+.group-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(215.4 16.3% 46.9%);
+  margin: 0 0 1rem 0;
+}
