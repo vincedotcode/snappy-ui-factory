@@ -1,22 +1,24 @@
 
 {
-  "name": "ig-components-cli",
+  "name": "@vincedotcode/test-sd-ui-cli",
   "version": "1.0.0",
-  "description": "CLI for IG Component Library",
+  "description": "CLI for Test SD UI Component Library",
   "main": "index.js",
   "bin": {
-    "ig-components": "./index.js"
+    "test-sd-ui": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["components", "ui", "react", "ig"],
-  "author": "Your Name",
+  "keywords": ["components", "ui", "react", "test-sd-ui"],
+  "author": "VinceCode",
   "license": "MIT",
   "dependencies": {
-    "commander": "^11.0.0"
+    "commander": "^11.0.0",
+    "node-fetch": "^3.3.2"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "registry.json"
   ]
 }
