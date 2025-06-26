@@ -12,7 +12,12 @@ export const CheckboxShowcase = () => {
     { id: 'orange', label: 'Orange', checked: true },
   ]);
 
-  const handleItemChange = (id: string, isChecked: boolean) => {
+  const handleCheckedChange = (checkedState: boolean | "indeterminate") => {
+    setChecked(checkedState === true);
+  };
+
+  const handleItemChange = (id: string, checkedState: boolean | "indeterminate") => {
+    const isChecked = checkedState === true;
     setItems(items.map(item => 
       item.id === id ? { ...item, checked: isChecked } : item
     ));
@@ -27,7 +32,7 @@ export const CheckboxShowcase = () => {
             <Checkbox 
               id="basic" 
               checked={checked} 
-              onCheckedChange={setChecked}
+              onCheckedChange={handleCheckedChange}
             />
             <Label htmlFor="basic">Accept terms and conditions</Label>
           </div>
@@ -50,7 +55,7 @@ export const CheckboxShowcase = () => {
               <Checkbox
                 id={item.id}
                 checked={item.checked}
-                onCheckedChange={(checked) => handleItemChange(item.id, checked as boolean)}
+                onCheckedChange={(checkedState) => handleItemChange(item.id, checkedState)}
               />
               <Label htmlFor={item.id}>{item.label}</Label>
             </div>
