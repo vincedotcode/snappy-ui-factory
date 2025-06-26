@@ -1,0 +1,18 @@
+
+.progress {
+  position: relative;
+  height: 1rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--ig-border-radius);
+  background-color: var(--ig-background-neutral-hover);
+  transition: background-color 0.3s ease;
+}
+
+.progress-indicator {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 0%;
+  background-color: var(--ig-background-primary-bold);
+  transition: all 0.3s ease;
+}

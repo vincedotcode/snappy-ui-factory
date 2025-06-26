@@ -1,0 +1,17 @@
+
+.separator {
+  flex-shrink: 0;
+  background-color: var(--ig-border);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.separator-horizontal {
+  height: 1px;
+  width: 100%;
+}
+
+.separator-vertical {
+  height: 100%;
+  width: 1px;
+}

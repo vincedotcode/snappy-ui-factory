@@ -1,6 +1,7 @@
+
 {
   "name": "@vincedotcode/test-sd-ui-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI for Test SD UI Component Library",
   "main": "index.js",
   "bin": {

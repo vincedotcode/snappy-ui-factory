@@ -1,0 +1,49 @@
+
+.radio-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.radio-group-item {
+  aspect-ratio: 1;
+  height: var(--ig-component-size-small);
+  width: var(--ig-component-size-small);
+  border-radius: 50%;
+  border: var(--ig-border-width) solid var(--ig-border);
+  background-color: var(--ig-background-neutral);
+  color: var(--ig-text-primary);
+  outline: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.radio-group-item:focus-visible {
+  box-shadow: var(--ig-box-shadow-focus);
+}
+
+.radio-group-item:disabled {
+  cursor: not-allowed;
+  opacity: var(--ig-opacity-disabled);
+}
+
+.radio-group-item[data-state="checked"] {
+  border-color: var(--ig-background-primary-bold);
+}
+
+.radio-group-item:hover:not(:disabled) {
+  border-color: var(--ig-border-bold);
+  background-color: var(--ig-background-neutral-hover);
+}
+
+.radio-group-indicator {
+  display: flex;
+  align-items: center;
+  justify-center: center;
+  color: currentColor;
+}
+
+.radio-group-indicator svg {
+  height: 0.625rem;
+  width: 0.625rem;
+  fill: currentColor;
+}
