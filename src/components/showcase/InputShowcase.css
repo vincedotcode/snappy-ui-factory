@@ -20,7 +20,7 @@
 .input-label {
   font-size: 0.875rem;
   font-weight: 500;
-  color: hsl(222.2 84% 4.9%);
+  color: var(--ig-text-bold);
 }
 
 .form-example {

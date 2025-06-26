@@ -36,10 +36,10 @@
 .stat-value {
   font-size: 1.5rem;
   font-weight: 700;
-  color: hsl(222.2 84% 4.9%);
+  color: var(--ig-text-bold);
 }
 
 .stat-label {
   font-size: 0.875rem;
-  color: hsl(215.4 16.3% 46.9%);
+  color: var(--ig-text-subtle);
 }

@@ -24,13 +24,13 @@
 
 .help-text {
   font-size: 0.875rem;
-  color: hsl(215.4 16.3% 46.9%);
+  color: var(--ig-text-subtle);
   margin: 0;
 }
 
 .group-title {
   font-size: 1.125rem;
   font-weight: 600;
-  color: hsl(215.4 16.3% 46.9%);
+  color: var(--ig-text-subtle);
   margin: 0 0 1rem 0;
 }

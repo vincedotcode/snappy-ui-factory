@@ -12,18 +12,19 @@
 .showcase-title {
   font-size: 1.875rem;
   font-weight: 700;
-  color: hsl(222.2 84% 4.9%);
+  color: var(--ig-text-bold);
   margin-bottom: 2rem;
   padding-left: 1rem;
-  border-left: 4px solid hsl(262.1 83.3% 57.8%);
+  border-left: 4px solid var(--ig-background-primary-bold);
 }
 
 .showcase-content {
-  background-color: hsl(0 0% 100%);
+  background-color: var(--ig-background-neutral-subtlest);
   border-radius: 0.75rem;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+  box-shadow: var(--ig-elevation-level-2);
   padding: 2rem;
-  border: 1px solid hsl(214.3 31.8% 91.4%);
+  border: 1px solid var(--ig-border);
+  transition: all 0.3s ease;
 }
 
 @keyframes fadeIn {
@@ -34,5 +35,19 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    gap: 3rem;
+  }
+  
+  .showcase-content {
+    padding: 1.5rem;
+  }
+  
+  .showcase-title {
+    font-size: 1.5rem;
   }
 }

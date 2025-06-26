@@ -1,8 +1,9 @@
 
 .app {
   min-height: 100vh;
-  background-color: hsl(0 0% 100%);
-  color: hsl(222.2 84% 4.9%);
+  background-color: var(--ig-background-neutral);
+  color: var(--ig-text-bold);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -12,15 +13,21 @@
 }
 
 .header {
-  text-align: center;
   margin-bottom: 3rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(to right, hsl(222.2 47.4% 11.2%), hsl(262.1 83.3% 57.8%));
+  background: var(--ig-gradients-brand-primary);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -29,7 +36,27 @@
 
 .subtitle {
   font-size: 1.25rem;
-  color: hsl(215.4 16.3% 46.9%);
+  color: var(--ig-text-subtle);
   max-width: 32rem;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.theme-toggle {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
 }
