@@ -134,6 +134,8 @@ html {
   font-family: var(--ig-font-family-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--ig-background-neutral);
+  transition: background-color 0.3s ease;
 }
 
 body {
@@ -146,6 +148,8 @@ body {
 
 #root {
   min-height: 100vh;
+  background-color: var(--ig-background-neutral);
+  transition: background-color 0.3s ease;
 }
 
 /* Scrollbar Styling */
